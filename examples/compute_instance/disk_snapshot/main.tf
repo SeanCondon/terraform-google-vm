@@ -64,6 +64,7 @@ module "compute_instance" {
 
   region            = var.region
   subnetwork        = var.subnetwork
+  subnetwork_project = var.project_id
   num_instances     = 1
   hostname          = "instance-disk-snapshot"
   instance_template = module.instance_template.self_link
